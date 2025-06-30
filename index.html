@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Rodney Dejournett</div>
+        <div class="logo">R.Dejournett</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -35,6 +35,40 @@
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="main-section-pic" src="./assets/IMG_5699.jpeg" alt="Rodney's portfolio picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hi, I'm</p>
+            <h1 class="title">Rodney Dejournett</h1>
+            <p class="section__text__p2">Software Engineer<br> Product Dev Engineer <br> Freelancer</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-25.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn profile"
+                class="icon" 
+                onclick="location.href='https://linkedin.com/in/rdejournett01'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="GitHub profile"
+                class="icon" 
+                onclick="location.href='https://github.com/rldejournett01'"
+                />
+            </div>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
