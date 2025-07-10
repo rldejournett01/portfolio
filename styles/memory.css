@@ -1,0 +1,71 @@
+body{
+    background-color:rgb(6, 6, 6);
+}
+
+img{
+    border: orange 2px solid;
+    margin: 5px;
+}
+
+div#allContent{
+    margin: 0 auto;
+    width:1000px;
+    padding: 3%;
+}
+
+#game-stats-container{
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-size: larger;
+
+}
+
+img.dimmed{
+    filter: contrast(15%);
+}
+
+h1{
+    color:white;
+    text-align:center;
+}
+
+#gameboard {
+    
+}
+
+input#reset{
+	background-color:orange;
+	margin:9px;
+    justify-content: center;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+}
+
+input#score{
+    color:rgb(130, 129, 129);
+    width:160px;
+    text-align:center;
+    padding: 0.5rem;
+    justify-content: center;
+    border-radius: 0.8rem;
+}
+
+#inputLabel{
+    color:white;
+    margin-left:10px;
+    margin-right:5px;
+}
+
+/*foot section*/
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}

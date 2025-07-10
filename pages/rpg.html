@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio</title>
+  <link href="/styles/rpg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main class="">
+    <section class="empty-section">
+      <div class="empty-div"></div>
+      <div class="empty-div"></div>
+      <div class="empty-div"></div>
+      <div class="empty-div"></div>
+    </section>
+    <section class="empty-section">
+      <div class="empty-div"></div>
+      <div class="empty-div"></div>
+    </section>
+  </main>
+    <!-- RPG Section -->
+    <section class="portfolio-block active" id="home">
+      <div class="game-container">
+        <div>
+            <h1 class="title">Demo RP Game</h1>
+            <p>How to Play: 
+
+            </p>
+        </div>
+        
+        <div class="exp-container">
+          <div id="level">Level 1</div>
+          <div class="experience-bar">
+            <div id="exp-bar"></div>
+            <span id="exp-percentage"></span>
+          </div>
+        </div>
+        <div class="health-container">
+          <div id="health">Health</div>
+          <div class="health-bar">
+            <div id="health-bar"></div>
+            <span id="health-percentage"></span>
+          </div>
+        </div>
+
+        <div class="nrg-container">
+          <div id="nrg">Energy</div>
+          <div class="nrg-bar">
+            <div id="nrg-bar"></div>
+            <span id="nrg-count"></span>
+          </div>
+        </div>
+
+        <div class="stats">
+          <!-- <div id="lvl">Level: 1</div> -->
+          <!-- <div id="nrg">NRG: 100</div> -->
+          <div id="cash">Cash: $25,000</div>
+          <!-- <div id="exp">XP: 0</div> -->
+          <div id="inventory" class="inventory">Inventory:
+          </div>
+        </div>
+
+        <div class="character-stats">
+          <div id="strength">Strength: 15</div>
+          <div id="speed">Speed: 15</div>
+          <div id="intelligence">IQ: 15</div>
+          <div id="luck">Luck: 0</div>
+        </div>
+
+        <div id="battle-modal" class="modal hidden">
+          <div class="modal-content">
+            <h3>Enemy Encounter!</h3>
+            <div id="battle-log" class="battle-log"></div>
+            <button id="attack">Attack</button>
+            <button id="flee">Flee</button>
+            <button id="use-medkit">Use Medkit</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="train-button" title="Train to gain strength and endurance. Cost 10 NRG." onclick="train(25,50)">Train</button>
+          <button id="explore-button" title="Explore to find resources, items, and possible enemies. Cost 20 NRG"
+            onclick="explore(20)">Explore</button>
+          <button id="hunt-button" onclick="hunt()" title="Hunt for food and possible enemies. Cost 60 NRG">Hunt</button>
+          <button id="rest-button" title="Regain your HP and NRG" onclick="rest()">Rest</button>
+        </div>
+        <div class="log">
+          <!-- <p id="game-text">Welcome to the game!</p> -->
+          <h3>Game Log:</h3>
+          <div id="log"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- API Projects Section -->
+    <!-- <section class="portfolio-block" id="api-projects">
+      <div class="api-container">
+        <div class="api-widget" id="weather-widget"></div>
+        <div class="api-widget" id="github-repos"></div>
+        <div class="api-widget" id="crypto-tracker"></div>
+      </div>
+    </section> -->
+
+    <!-- Code Showcase Section -->
+    <!-- <section class="portfolio-block" id="code-showcase">
+      <div class="code-editor">
+        <div class="editor-header">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </div>
+        <pre id="live-code"></pre>
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <!-- <section class="portfolio-block" id="contact-section">
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="contactForm">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section> -->
+  </main>
+
+  <!-- Add navigation arrows to your HTML -->
+  <!-- <div class="slideshow-nav">
+    <button class="nav-arrow prev" onclick="navigateSection('prev')">❮</button>
+    <button class="nav-arrow next" onclick="navigateSection('next')">❯</button>
+  </div> -->
+
+  <div id="popup-message" class="hidden"></div>
+  <script src="/scripts/rpg.js"></script>
+</body>
+
+</html>
