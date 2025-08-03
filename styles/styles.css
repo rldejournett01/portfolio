@@ -470,6 +470,7 @@ footer p {
 
 p#tidbit-content {
   overflow: hidden; /* Hide overflow */
+  padding: 0px 2rem;
   border-right: 2px solid #000; /* Blinking cursor */
   white-space: nowrap; /* Keep text on one line */
   display: inline-block;
